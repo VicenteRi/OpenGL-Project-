@@ -34,12 +34,13 @@
                 "args": [
                     "${workspaceRoot}/src/main.cpp",
                     // Include all source files.
-
+                    "${workspaceRoot}/dependencies/GLAD/src/glad.c",
                     // Include .cpp files here (These are for .h file code)
                     
                     "-g",
                     "--std=c++17",
                     "-I${workspaceRoot}/dependencies/GLFW/include",
+                    "-I${workspaceFolder}/dependencies/GLAD/include",
                     "-lopengl32",
                     "-L${workspaceRoot}/dependencies/GLFW/lib-mingw",
                     "-static",
